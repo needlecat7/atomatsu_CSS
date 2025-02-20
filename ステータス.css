@@ -1,0 +1,64 @@
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/-obs.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/-scrollbar.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/balloon.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/board.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/boardBackground.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/chat.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/cutIn.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/edit.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/header.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/modal.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/monitoring.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/newDice.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/scaling.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/timer.css");
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/asset/volume.css");
+/* 固定化を流用 ※ステータスバーのみ流用不可 */
+@import url("https://yudukiak.github.io/ccfoliaCSS/CSS/status/main.css");
+
+
+
+/* キャラ毎のステータス 大枠 */
+div[tabindex="0"][style^="right:"]>div {
+  top: 0;
+  padding: 1.5rem .5rem;
+}
+
+/* キャラ毎のステータスを非表示 */
+div[tabindex="0"][style^="right:"]>div>div {
+  margin-bottom: 2rem;
+  display: none;
+}
+
+/* ステータス 大枠 */
+.MuiBadge-root+div>div {
+  max-width: calc((var(--status-width) + var(--status-border-width)*2 + 8px) * var(--status-column));
+}
+
+/* ステータス毎 大枠 */
+.MuiBadge-root+div>div>div {
+  height: var(--status-height);
+  width: var(--status-width);
+  border: var(--status-border-width) var(--status-border-style) var(--status-border-color);
+  border-image: var(--status-border-image);
+  border-radius: var(--status-border-radius);
+  box-shadow: var(--status-border-shadow);
+  overflow: hidden;
+}
+
+/* ステータス 背景 大枠 */
+.MuiBadge-root+div>div>div>div {
+  height: var(--status-height);
+  width: var(--status-width);
+}
+
+/* ステータス 背景 */
+.MuiBadge-root+div>div>div>div:nth-child(2)>div {
+  height: var(--status-height);
+  background: var(--status-background);
+}
+
+:root{zoom:2}
+
+/*アバター*/
+.css-1rzb3uu{display:none;}

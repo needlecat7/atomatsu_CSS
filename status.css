@@ -58,7 +58,7 @@ div[tabindex="0"][style^="right:"]>div>div {
   background: var(--status-background);
 }
 
-:root{zoom:1}
+:root{zoom:1;}
 
 /*アバター*/
 .css-1rzb3uu{display:none;}

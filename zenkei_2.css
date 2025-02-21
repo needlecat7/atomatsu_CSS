@@ -1,0 +1,82 @@
+/*obs*/
+body {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+figure>img[aria-label="test"]{
+   display: none;
+}
+
+/*スクロールバー*/
+::-webkit-scrollbar {
+    display: none !important;
+}
+
+/*吹き出し*/
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6 {
+    display: none;
+}
+
+/*背景*/
+header.MuiAppBar-positionFixed+div {
+    display: none;
+}
+
+/*チャット*/
+.MuiDrawer-root.MuiDrawer-docked {
+    display: none;
+}
+div[tabindex="0"] {
+    width: 100%;
+}
+
+
+/*編集マーク*/
+button.MuiFab-root {
+    display: none;
+}
+
+/*ヘッダー*/
+header.MuiAppBar-positionFixed {
+    display: none;
+}
+
+/*広告?*/
+[role="presentation"]:not(.MuiSnackbar-root) {
+    display: none;
+}
+
+/*新バージョンダイス*/
+div[style="position: relative; width: 100%; height: 100%; overflow: hidden;"] {
+    display: none;
+}
+
+/*拡大率*/
+div[tabindex="0"]>div:not([class])+div {
+    display: none;
+}
+
+/*ステータス*/
+div[tabindex="0"]>div:not([class])+div+div:not(.MuiPaper-root),
+div.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6+div {
+    display: none;
+}
+
+/*タイマー*/
+.MuiPaper-elevation5 {
+    display: none;
+}
+
+/*ボリューム*/
+div[tabindex="0"]>div:nth-child(3) {
+    display: none;
+}
+
+/*カットイン*/
+div [role="presentation"]{display:none;}
+
+:root{
+  zoom:0.95;
+}

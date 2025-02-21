@@ -1,0 +1,162 @@
+/*obs*/
+body {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0px auto;
+    overflow: hidden;
+}
+:root {
+  --background-color: rgba(0, 0, 0 ,0.99);
+  --background-padding: 8px 8px 8px 8px;
+  --border-color: rgb(255, 255, 255);
+  --border-image: url();
+  --border-width: 2px;
+  --border-radius: 0px;
+  --border-shadow: 0;
+  --font-color: rgb(255, 255, 255);
+  --font-color-shadow: 0;
+  --font-color-fail: rgb(245, 0, 87);
+  --font-color-fail-shadow: 0;
+  --font-color-success: rgb(33, 150, 243);
+  --font-color-success-shadow: 0;
+  --font-size: 1.5rem;
+  --font-shadow: 0;
+  --image-radius: 0%;
+  --width: 650px;
+  --line-clamp: 30;
+ zoom: 0.5;
+}
+
+.MuiDrawer-root>.MuiPaper-root {
+  width: 100%;
+}
+
+/* ヘッダー */
+.MuiDrawer-root>.MuiPaper-root>header {
+  display: none;
+}
+
+/* 入力欄 */
+form > div {
+  display: none !important;
+}
+
+hr {
+  display: none;
+}
+
+.MuiDrawer-paperAnchorDockedRight {
+  border: none;
+}
+
+.MuiListItem-root {
+  padding: var(--background-padding);
+  background: var(--background-color);
+  border: solid var(--border-width) var(--border-color);
+  border-radius: var(--border-radius);
+  border-image: var(--border-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  box-shadow: var(--border-shadow);
+  align-items: center;
+}
+
+.MuiListItemAvatar-alignItemsFlexStart {
+  margin: 0px;
+}
+
+.MuiListItemAvatar-root>div {
+  background: transparent;
+  border-radius: var(--image-radius);
+}
+
+.MuiPaper-root {
+  background-color: transparent;
+}
+
+.MuiTypography-body2 {
+  color: var(--font-color);
+  font-size: var(--font-size)
+}
+
+.MuiList-root>div:nth-child(1)>div>div>div {
+  display: none;
+  height: auto !important;
+  min-height: auto !important;
+  width: var(--width) !important;
+  position: static !important;
+  flex-shrink: 0;
+  margin: 10px;
+}
+
+.MuiListItemText-root {
+  overflow: hidden;
+}
+
+p.MuiTypography-root,
+.MuiTypography-colorTextSecondary {
+  color: var(--font-color);
+  text-shadow: var(--font-color-shadow);
+}
+
+p.MuiTypography-root {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--line-clamp);
+}
+
+.css-1l6qhgm,
+.MuiTypography-colorPrimary {
+  color: var(--font-color-success);
+  text-shadow: var(--font-color-success-shadow);
+}
+
+.css-1j13mke,
+.MuiTypography-colorSecondary {
+  color: var(--font-color-fail);
+  text-shadow: var(--font-color-fail-shadow);
+}
+
+.MuiListItemText-primary {
+  display: none;
+}
+.MuiListItemText-primary,
+.MuiTypography-caption {
+  color: var(--font-color);
+  text-shadow: var(--font-color-shadow);
+}
+.css-2t4plf{
+ background: none rgba(0, 0, 0, 0);
+}
+
+.css-k1prtn {
+ display: none;
+}
+
+.MuiList-root>div:nth-child(1)>div>div:nth-last-child(-n+3)>div {
+    display: flex !important;
+}
+:root {
+  --fadeout-sec: 7s;
+}
+
+.MuiListItem-gutters {
+  animation:
+    fadeIn 2s ease 0s,
+    fadeOut 2s ease calc(var(--fadeout-sec) + 2s) forwards;
+}
+
+
+.MuiList-root>div:nth-child(1) {
+  height: 100% !important;
+}
+
+.MuiList-root>div:nth-child(1)>div {
+  bottom: 0;
+  top: auto !important;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}

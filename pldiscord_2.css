@@ -1,0 +1,20 @@
+/* OBS */
+body { background-color: rgba(0, 0, 0, 0); overflow: hidden; }
+
+/* 選択したユーザ以外の画像を非表示にする */
+img:not([src*="484341755559280671"]){ display:none; }
+img:not([src*="484341755559280671"])+div{ display:none; }
+li{ position:fixed;top:15px;left:0;right:0;width:100%; }
+
+
+/* アイコンを立ち絵画像に差し替える */
+img[class*="Voice_avatar_"]{
+  filter: brightness(50%);
+}
+
+/* 発話状態の設定 */
+img[class*="Voice_avatarSpeaking"]{
+  border-color:rgba(0,0,0,0) !important;
+  filter: brightness(100%) ;
+}
+:root{zoom:1.5;}
